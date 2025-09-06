@@ -1018,8 +1018,8 @@ const StyledWrapper = styled.div`
 
   .card .content .trust-bar .trust-icon.lightning-speed {
     color: #fbbf24;
-    filter: drop-shadow(0 0 4px rgba(251, 191, 36, 0.8));
-    animation: lightning-flash 1s infinite;
+    filter: drop-shadow(0 0 3px rgba(251, 191, 36, 0.6));
+    animation: lightning-flash 3s infinite;
   }
 
   .card .content .trust-bar .trust-icon.official-seal {
