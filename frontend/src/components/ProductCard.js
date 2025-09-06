@@ -1043,21 +1043,13 @@ const StyledWrapper = styled.div`
   }
 
   @keyframes lightning-flash {
-    0%, 100% { 
+    0%, 80%, 100% { 
       transform: scale(1); 
-      filter: drop-shadow(0 0 4px rgba(251, 191, 36, 0.8)); 
+      filter: drop-shadow(0 0 3px rgba(251, 191, 36, 0.6)); 
     }
-    25% { 
-      transform: scale(1.2) rotate(-10deg); 
-      filter: drop-shadow(0 0 8px rgba(251, 191, 36, 1)); 
-    }
-    50% { 
-      transform: scale(1.1) rotate(5deg); 
-      filter: drop-shadow(0 0 6px rgba(251, 191, 36, 0.9)); 
-    }
-    75% { 
-      transform: scale(1.15) rotate(-5deg); 
-      filter: drop-shadow(0 0 10px rgba(251, 191, 36, 1.2)); 
+    40% { 
+      transform: scale(1.05); 
+      filter: drop-shadow(0 0 5px rgba(251, 191, 36, 0.8)); 
     }
   }
 
