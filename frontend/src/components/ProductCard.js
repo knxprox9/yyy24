@@ -970,67 +970,87 @@ const StyledWrapper = styled.div`
   /* Trust Bar Styles */
   .card .content .trust-bar {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    gap: 8px;
+    gap: 12px;
     padding: 0;
     margin: 0;
     font-family: 'Tajawal', 'IBM Plex Sans Arabic', 'Cairo', sans-serif;
     background: none;
     border: none;
     box-shadow: none;
-    flex-wrap: nowrap;
-    overflow: hidden;
   }
 
   .card .content .trust-bar .trust-item {
     display: flex;
     align-items: center;
-    gap: 3px;
-    flex: 1;
-    min-width: 0;
+    justify-content: center;
   }
 
   .card .content .trust-bar .trust-separator {
     color: #cbd5e0;
     font-weight: 300;
-    font-size: 0.6rem;
+    font-size: 0.7rem;
     opacity: 0.8;
-    flex-shrink: 0;
-  }
-
-  .card .content .trust-bar .trust-rating {
-    display: flex;
-    align-items: center;
-    gap: 3px;
-  }
-
-  .card .content .trust-bar .stars {
-    font-size: 0.7rem;
-    line-height: 1;
-    color: #fbbf24;
-  }
-
-  .card .content .trust-bar .rating-text {
-    font-weight: 700;
-    font-size: 0.7rem;
-    color: #2d3748;
   }
 
   .card .content .trust-bar .trust-icon {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
     line-height: 1;
-    flex-shrink: 0;
+    transition: all 0.3s ease;
   }
 
-  .card .content .trust-bar .trust-text {
-    font-weight: 600;
-    font-size: 0.55rem;
-    color: #4a5568;
-    line-height: 1.2;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
+  .card .content .trust-bar .trust-icon.shield {
+    filter: drop-shadow(0 0 3px rgba(34, 197, 94, 0.5));
+    animation: pulse-green 2s infinite;
+  }
+
+  .card .content .trust-bar .trust-icon.gold-badge {
+    filter: drop-shadow(0 0 3px rgba(251, 191, 36, 0.7));
+    animation: gold-shine 3s infinite;
+  }
+
+  .card .content .trust-bar .trust-icon.progress-bar {
+    background: linear-gradient(90deg, #22c55e 0%, #22c55e 100%, #e5e7eb 100%);
+    background-size: 100% 100%;
+    animation: progress-fill 2s infinite;
+  }
+
+  .card .content .trust-bar .trust-icon.counter {
+    font-weight: 700;
+    font-size: 0.65rem;
+    color: #059669;
+    animation: counter-change 1.5s infinite;
+  }
+
+  .card .content .trust-bar .trust-icon.social-pulse {
+    animation: social-blink 1.5s infinite;
+  }
+
+  @keyframes pulse-green {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); filter: drop-shadow(0 0 5px rgba(34, 197, 94, 0.8)); }
+  }
+
+  @keyframes gold-shine {
+    0%, 100% { filter: drop-shadow(0 0 3px rgba(251, 191, 36, 0.7)); }
+    50% { filter: drop-shadow(0 0 6px rgba(251, 191, 36, 1)) brightness(1.2); }
+  }
+
+  @keyframes progress-fill {
+    0% { background: linear-gradient(90deg, #22c55e 0%, #e5e7eb 0%); }
+    100% { background: linear-gradient(90deg, #22c55e 100%, #e5e7eb 100%); }
+  }
+
+  @keyframes counter-change {
+    0% { color: #059669; }
+    50% { color: #10b981; transform: scale(1.05); }
+    100% { color: #059669; }
+  }
+
+  @keyframes social-blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.6; transform: scale(0.9); }
   }
 
   .card .content .empty-space {
