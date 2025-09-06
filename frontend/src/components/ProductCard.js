@@ -1020,7 +1020,43 @@ const StyledWrapper = styled.div`
     font-weight: 700;
     font-size: 0.65rem;
     color: #059669;
-    animation: counter-change 1.5s infinite;
+    position: relative;
+  }
+
+  .card .content .trust-bar .trust-icon.counter::before {
+    content: "⚡";
+    position: absolute;
+    left: -12px;
+    top: -2px;
+    font-size: 0.7rem;
+    animation: spark-flash 1s infinite;
+  }
+
+  .card .content .trust-bar .trust-icon.counter::after {
+    content: "+";
+    position: absolute;
+    right: -8px;
+    top: -1px;
+    font-size: 0.6rem;
+    color: #10b981;
+    animation: plus-bounce 2s infinite;
+  }
+
+  .card .content .trust-bar .live-digit {
+    animation: digit-flip 1.5s infinite;
+    display: inline-block;
+  }
+
+  .card .content .trust-bar .live-digit:nth-child(1) {
+    animation-delay: 0.2s;
+  }
+
+  .card .content .trust-bar .live-digit:nth-child(2) {
+    animation-delay: 0.4s;
+  }
+
+  .card .content .trust-bar .live-digit:nth-child(3) {
+    animation-delay: 0.6s;
   }
 
   .card .content .trust-bar .trust-icon.official-seal {
