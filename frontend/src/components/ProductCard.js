@@ -826,9 +826,9 @@ const StyledWrapper = styled.div`
     border-radius: 10px;
     padding: 12px;
     margin-bottom: 0.8rem;
-    margin-left: -0.4rem;
-    margin-right: -0.4rem;
-    width: calc(100% + 0.8rem);
+    margin-left: -20px;
+    margin-right: -20px;
+    width: calc(100% + 40px);
     font-family: 'Tajawal', 'IBM Plex Sans Arabic', 'Cairo', sans-serif;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   }
