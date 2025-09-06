@@ -1085,6 +1085,23 @@ const StyledWrapper = styled.div`
     100% { color: #059669; }
   }
 
+  @keyframes spark-flash {
+    0%, 100% { opacity: 0.4; transform: scale(0.8); }
+    50% { opacity: 1; transform: scale(1.1); color: #fbbf24; }
+  }
+
+  @keyframes plus-bounce {
+    0%, 100% { transform: translateY(0px); }
+    25% { transform: translateY(-2px); }
+    50% { transform: translateY(0px); }
+    75% { transform: translateY(-1px); }
+  }
+
+  @keyframes digit-flip {
+    0%, 70%, 100% { transform: rotateX(0deg); }
+    35% { transform: rotateX(90deg); }
+  }
+
   @keyframes seal-rotate {
     0%, 100% { transform: rotate(0deg); filter: drop-shadow(0 0 4px rgba(234, 179, 8, 0.6)); }
     25% { transform: rotate(5deg); }
