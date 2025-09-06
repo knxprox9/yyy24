@@ -280,7 +280,7 @@ const ProductCard = () => {
             </div>
             <div className="trust-separator">|</div>
             <div className="trust-item">
-              <span className="trust-icon social-pulse">🟢</span>
+              <span className="trust-icon official-seal">🏅</span>
             </div>
           </div>
 
