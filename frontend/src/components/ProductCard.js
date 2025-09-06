@@ -1023,8 +1023,9 @@ const StyledWrapper = styled.div`
     animation: counter-change 1.5s infinite;
   }
 
-  .card .content .trust-bar .trust-icon.social-pulse {
-    animation: social-blink 1.5s infinite;
+  .card .content .trust-bar .trust-icon.official-seal {
+    filter: drop-shadow(0 0 4px rgba(234, 179, 8, 0.6));
+    animation: seal-rotate 4s infinite;
   }
 
   @keyframes pulse-green {
@@ -1048,9 +1049,11 @@ const StyledWrapper = styled.div`
     100% { color: #059669; }
   }
 
-  @keyframes social-blink {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0.6; transform: scale(0.9); }
+  @keyframes seal-rotate {
+    0%, 100% { transform: rotate(0deg); filter: drop-shadow(0 0 4px rgba(234, 179, 8, 0.6)); }
+    25% { transform: rotate(5deg); }
+    50% { transform: rotate(0deg); filter: drop-shadow(0 0 6px rgba(234, 179, 8, 0.9)); }
+    75% { transform: rotate(-5deg); }
   }
 
   .card .content .empty-space {
