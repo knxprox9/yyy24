@@ -264,28 +264,23 @@ const ProductCard = () => {
           {/* شريط الثقة الجديد */}
           <div className="trust-bar">
             <div className="trust-item">
-              <span className="trust-icon">🛡️</span>
-              <span className="trust-text">محمي بتقنيات البنوك العالمية</span>
+              <span className="trust-icon shield">🛡️</span>
             </div>
             <div className="trust-separator">|</div>
             <div className="trust-item">
-              <span className="trust-icon">🏆</span>
-              <span className="trust-text">الأكثر مبيعًا في السوق الرقمي</span>
+              <span className="trust-icon gold-badge">🏆</span>
             </div>
             <div className="trust-separator">|</div>
             <div className="trust-item">
-              <span className="trust-icon">📊</span>
-              <span className="trust-text">موثوقية 100%</span>
+              <span className="trust-icon progress-bar">📊</span>
             </div>
             <div className="trust-separator">|</div>
             <div className="trust-item">
-              <span className="trust-icon">🔢</span>
-              <span className="trust-text">15,321 بطاقة بيعت حتى الآن</span>
+              <span className="trust-icon counter">15,321</span>
             </div>
             <div className="trust-separator">|</div>
             <div className="trust-item">
-              <span className="trust-icon">🟢</span>
-              <span className="trust-text">آخر بطاقة فُعّلت قبل 2 دقيقة – من صنعاء</span>
+              <span className="trust-icon social-pulse">🟢</span>
             </div>
           </div>
 
