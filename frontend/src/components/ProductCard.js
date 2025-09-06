@@ -975,28 +975,33 @@ const StyledWrapper = styled.div`
   /* Trust Bar Styles */
   .card .content .trust-bar {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 12px;
+    gap: 8px;
     padding: 0;
     margin: 0;
     font-family: 'Tajawal', 'IBM Plex Sans Arabic', 'Cairo', sans-serif;
     background: none;
     border: none;
     box-shadow: none;
+    flex-wrap: nowrap;
+    overflow: hidden;
   }
 
   .card .content .trust-bar .trust-item {
     display: flex;
     align-items: center;
-    gap: 4px;
+    gap: 3px;
+    flex: 1;
+    min-width: 0;
   }
 
   .card .content .trust-bar .trust-separator {
     color: #cbd5e0;
     font-weight: 300;
-    font-size: 0.7rem;
+    font-size: 0.6rem;
     opacity: 0.8;
+    flex-shrink: 0;
   }
 
   .card .content .trust-bar .trust-rating {
@@ -1018,16 +1023,19 @@ const StyledWrapper = styled.div`
   }
 
   .card .content .trust-bar .trust-icon {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     line-height: 1;
+    flex-shrink: 0;
   }
 
   .card .content .trust-bar .trust-text {
     font-weight: 600;
-    font-size: 0.65rem;
+    font-size: 0.55rem;
     color: #4a5568;
     line-height: 1.2;
     white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
   }
 
   .card .content .empty-space {
