@@ -1042,27 +1042,23 @@ const StyledWrapper = styled.div`
     100% { background: linear-gradient(90deg, #22c55e 100%, #e5e7eb 100%); }
   }
 
-  @keyframes counter-change {
-    0% { color: #059669; }
-    50% { color: #10b981; transform: scale(1.05); }
-    100% { color: #059669; }
-  }
-
-  @keyframes spark-flash {
-    0%, 100% { opacity: 0.4; transform: scale(0.8); }
-    50% { opacity: 1; transform: scale(1.1); color: #fbbf24; }
-  }
-
-  @keyframes plus-bounce {
-    0%, 100% { transform: translateY(0px); }
-    25% { transform: translateY(-2px); }
-    50% { transform: translateY(0px); }
-    75% { transform: translateY(-1px); }
-  }
-
-  @keyframes digit-flip {
-    0%, 70%, 100% { transform: rotateX(0deg); }
-    35% { transform: rotateX(90deg); }
+  @keyframes lightning-flash {
+    0%, 100% { 
+      transform: scale(1); 
+      filter: drop-shadow(0 0 4px rgba(251, 191, 36, 0.8)); 
+    }
+    25% { 
+      transform: scale(1.2) rotate(-10deg); 
+      filter: drop-shadow(0 0 8px rgba(251, 191, 36, 1)); 
+    }
+    50% { 
+      transform: scale(1.1) rotate(5deg); 
+      filter: drop-shadow(0 0 6px rgba(251, 191, 36, 0.9)); 
+    }
+    75% { 
+      transform: scale(1.15) rotate(-5deg); 
+      filter: drop-shadow(0 0 10px rgba(251, 191, 36, 1.2)); 
+    }
   }
 
   @keyframes seal-rotate {
