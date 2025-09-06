@@ -276,7 +276,7 @@ const ProductCard = () => {
             </div>
             <div className="trust-separator">|</div>
             <div className="trust-item">
-              <span className="trust-icon counter">15,321</span>
+              <span className="trust-icon counter">15,<span className="live-digit">3</span><span className="live-digit">2</span><span className="live-digit">1</span></span>
             </div>
             <div className="trust-separator">|</div>
             <div className="trust-item">
